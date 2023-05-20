@@ -1,0 +1,28 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("nigger hub", "Synapse")
+
+local Tab = Window:NewTab("auto click")
+local ClickSection = Tab:NewSection("andrew ma cupcake fr")
+
+ClickSection:NewButton("ButtonText", "ButtonInfo", function()
+    while wait() do
+        game:GetService("ReplicatedStorage").Packages.Knit.Services.ClickService.RF.Click:InvokeServer()
+        if game:GetService("ReplicatedStorage").Packages.Knit.Services.RaceService.RF.ReachedCheckpoint:InvokeServer(1,1) then
+            break
+        end
+    end
+end)
+
+
+local Tab = Window:NewTab("Open")
+local EggSection = Tab:NewSection("how much does niko weigh???")
+
+
+EggSection:NewButton("ButtonText", "ButtonInfo", function()
+    while wait() do
+        game:GetService("ReplicatedStorage").Packages.Knit.Services.TutorialService.RF.Finish:InvokeServer("Egg")
+        if game:GetService("ReplicatedStorage").Packages.Knit.Services.EggService.RF.Open:InvokeServer("Starter01","1",{}) then
+            break
+        end
+    end
+end)
